@@ -1,4 +1,2 @@
 # first-repo
-first repository but second trial 
-# next step
-delete if failes
+first repository with freeCodeCamp
