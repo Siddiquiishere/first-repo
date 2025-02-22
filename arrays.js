@@ -5,7 +5,6 @@
 // Arrays are denoted using square brackets ([]). Here is an example of a variable with the value of an empty array:
 // Example Code
 // let array = [];
-
 // Question
 // Declare a rows variable and assign it an empty array.
 
@@ -15,18 +14,15 @@ let rows = [];
 
 // Step 19
 // When an array holds values, or elements, those values are separated by commas. Here is an array that holds two strings:
-
 // Example Code
 // let array = ["first", "second"];
 // Change your rows declaration to be an array with the strings "Naomi", "Quincy", and "CamperChan". The order of values in an array is important, so follow that order. Remember that strings are case-sensitive.
-
 // let rows = ["Naomi", "Quincy", "CamperChan"];
 
 // -----------------------------------------------
 
 // Step 21
 // Arrays are special in that they are considered mutable. This means you can change the value at an index directly.
-
 // For example, this code would assign the number 25 to the second element in the array:
 
 // Example Code
@@ -41,4 +37,25 @@ let rows = [];
 // console.log(rows)
 
 // -----------------------------------------------
+
+// Step 22
+// Notice how the value inside your rows array has been changed directly? This is called mutation. As you learn more about arrays, you will learn when to mutate an array, and when you should not.
+// Before moving on, this is a great opportunity to learn a common array use. Currently, your code accesses the last element in the array with rows[2]. But you may not know how many elements are in an array when you want the last one.
+// You can make use of the .length property of an array - this returns the number of elements in the array. To get the last element of any array, you can use the following syntax:
+// Example Code
+// array[array.length - 1]
+// array.length returns the number of elements in the array. By subtracting 1, you get the index of the last element in the array. You can apply this same concept to your rows array.
+// Update your rows[2] to dynamically access the last element in the rows array. Refer to the example above to help you.
+// You should not see anything change in your console.
+
+// let character = 'Hello';
+// let count = 8;
+// let rows = ["Naomi", "Quincy", "CamperChan"];
+// console.log(rows[0]);
+// rows[2] = 10;
+// rows[rows.length-1]
+// console.log(rows)
+
+// ------------------------------------------
+
 
