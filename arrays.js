@@ -95,3 +95,33 @@
 
 // let popped =rows.pop()
 // console.log(popped);
+
+// -----------------------------------------------------------
+
+// Step 29
+// Were you expecting to see 4 in the console? .push() returns the new length of the array, after adding the value you give it.
+
+// It is important to be aware of what values a method returns. Take some time to experiment with .push() and .pop(). When you are ready, remove all of your .push() and .pop() calls, and your console.log statements.
+
+// let pushed = rows.push("freeCodeCamp");
+// console.log(pushed);
+// let popped = rows.pop();
+// console.log(popped);
+// console.log(rows);
+
+// -------------------------------------------------------------
+
+
+// Step 33
+// To generate a pyramid, you will need to create multiple rows. When you have to perform a task repeatedly until a condition is met, you will use a loop. There are many ways to write a loop.
+// You are going to start with a basic for loop. for loops use the following syntax:
+// for (iterator; condition; iteration) {
+//   logic;
+// }
+// Step 34
+// Your loop now needs a proper iterator. The iterator is a variable you can declare specifically in your for loop to control how the loop iterates or goes through your logic.
+
+// It is a common convention to use i as your iterator variable in a loop. A for loop allows you to declare this in the parentheses (). For example, here is a for loop that declares an index variable and assigns it the value 100.
+// for (let i = 0; "condition"; "iteration") {
+
+// }
