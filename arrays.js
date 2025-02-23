@@ -158,3 +158,61 @@
 // for (let i = 0; i < count; i = i + 1) {
 //     console.log(i)
 //     }
+
+// -------------------------------------------------------------
+
+// Step 38
+// You should see the numbers zero through seven printed in your console, one per line. This will serve as the foundation for generating your pyramid.
+
+// Replace your log statement with a statement to push i to your rows array.
+
+// for (let i = 0; i < count; i = i + 1) {
+//     rows.push(i)
+//   }
+
+// ---------------------------------------------------------------------
+
+
+// Step 42
+// Remember in your previous loop that you used the addition operator + to increase the value of i by 1.
+
+// You can do a similar thing with a string value, by appending a new string to an existing string. For example, hello = hello + " World"; would add the string " World" to the existing string stored in the hello variable. This is called concatenation.
+
+// In your for...of loop, use the addition operator to concatenate the row value to the result value.
+
+
+// for (const row of rows) {
+//     result = row + result
+//    }
+
+
+// -----------------------------------------------------------
+
+// Step 44
+// Printing numbers won't result in a visually appealing pyramid. Now that you're outputting the formatted content of your rows array, it's time to update your original loop.
+
+// Instead of pushing i to the array, push the value of your character variable.
+
+// for (let i = 0; i < count; i = i + 1) {
+//     rows.push(character);
+//   }
+
+
+// -------------------------------------------------------------------
+// Step 45
+// Now you have a series of # characters, but the pyramid shape is still missing. Fortunately, the i variable represents the current "row" number in your loop, enabling you to use it for crafting a pyramid-like structure.
+
+// To achieve this, you will use the .repeat() method available to strings. This method accepts a number as an argument, specifying the number of times to repeat the target string. For example, using .repeat() to generate the string "Code! Code! Code!":
+// const activity = "Code! ";
+// activity.repeat(3);
+
+
+
+
+// const character = "#";
+// const count = 8;
+// const rows = [];
+
+// for (let i = 0; i < count; i = i + 1) {
+//     rows.push(character.repeat(i));
+//   }
