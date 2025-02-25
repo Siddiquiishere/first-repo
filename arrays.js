@@ -285,3 +285,18 @@
 //     const test = "Testing";  
 //     return test;
 //   }
+/*
+----------------------------------------------------
+
+Step 65
+Remember in an earlier step, you learned about return values. A function can return a value for your application to consume separately.
+In a function, the return keyword is used to specify a return value. For example, this function would return the value given to the first parameter:
+Example Code
+function name(parameter) {
+    return parameter;
+  }
+ Use the return keyword to return the value of the character variable, repeated rowNumber times.   
+Step 77
+JavaScript also has support for multi-line comments. A multi-line comment starts with /* and ends with */
+/*Unlike a single-line comment, a multi-line comment will encapsulate multiple lines.
+Use /* and */ /*to turn your current for loop, including the body, into a multi-line comment.*/
