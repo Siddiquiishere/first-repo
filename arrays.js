@@ -300,7 +300,7 @@ Step 77
 JavaScript also has support for multi-line comments. A multi-line comment starts with /* and ends with */
 /*Unlike a single-line comment, a multi-line comment will encapsulate multiple lines.
 Use /* and */ /*to turn your current for loop, including the body, into a multi-line comment.*/
-
+// -----------------------------------------------------------------------
 /*Step 79
 You'll see the string printed in the console, because true is in fact true.
 
@@ -308,6 +308,8 @@ Change the condition of your if statement to the boolean false.
 if (false) {
   console.log("Condition is true");
 }
+  // -----------------------------------------------------------------------
+
 Step 80
 Now the string is no longer printing, because false is not true. But what about other values?
 
@@ -315,6 +317,8 @@ Try changing the condition to the string "false".
 if ("false") {
   console.log("false");
 }*/
+// -----------------------------------------------------------------------
+
 /*Step 81
 The text has appeared again! This is because "false" is a string, which when evaluated to a boolean becomes true. This means "false" is a truthy value.
 
@@ -348,3 +352,53 @@ if ("") {
   console.log("Condition is true");
 }else if(5<10){
  console.log( "5 is less than 10")*/
+/*
+ 14151617181920
+Step 83
+Sometimes you will want to run different code when all of the if...else if conditions are false. You can do this by adding an else block.
+
+An else block will only evaluate if the conditions in the if and else if blocks are not met.
+
+Here the else block is added to the else if block.
+
+Example Code
+
+if (condition) {
+  // this code will run if condition is true
+} else if (condition2) {
+  // this code will run if the first condition is false
+} else {
+  // this code will run 
+  // if the first and second conditions are false
+}
+Add an else block to the else if block. Inside the else block, log the string "This is the else block" to the console.
+
+To see the results in the console, you can manually change the < in the else if statement to >. That will make the condition false and the else block will run.
+
+if ("") {
+  console.log("Condition is true");
+} else if (5 > 10) {
+  console.log("5 is less than 10");
+}else{
+  console.log("This is the else block")
+// }*/
+// Step 86
+// Right now, if you change continueLoop to true, your while loop will run forever. This is called an infinite loop, and you should be careful to avoid these. An infinite loop can lock up your system, requiring a full restart to escape.
+
+// To avoid this, start by using the increment operator to increase the value of the done variable inside your loop.
+// while (continueLoop) {
+//   done++
+//   }
+
+
+// Step 94
+// Your pyramid generator is still working. However, it could be possible to end up with an infinite loop again.
+
+// Because you are only checking if done is not equal to count, if done were to be larger than count your loop would go on forever.
+
+// Update your loop's condition to check if done is less than or equal to count.
+// let done = 0;
+
+// while (done <= count) {
+//   done++;
+//   rows.push(padRow(done, count));
