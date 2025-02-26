@@ -410,4 +410,87 @@ if ("") {
 
 // for (let i = count; i > 0;  i--) {
 //   rows.push(padRow(i, count));
+// // }
+// ------------------------------------------------------------
+// Step 107
+// The .unshift() method of an array allows you to add a value to the beginning of the array, unlike .push() which adds the value at the end of the array. .unshift() returns the new length of the array it was called on.
+// const countDown = [2, 1, 0];
+// const newLength = countDown.unshift(3);
+// console.log(countDown); // [3, 2, 1, 0]
+// console.log(newLength); // 4
+// Use const to declare an unshifted variable, and assign it the result of calling .unshift() on your numbers array. Pass 5 as the argument. Then print your unshifted variable.
+// const numbers = [1, 2, 3];
+// const unshifted =numbers.unshift(5)
+
+// console.log(numbers);
+// console.log(unshifted)
+
+// ------------------------------------------------------------
+// Step 1
+// A teacher has finished grading their students' tests and needs your help to calculate the average score for the class.
+
+// Complete the getAverage function which takes in an array of test scores and returns the average score.
+
+// The average is calculated by adding up all the scores and dividing by the total number of scores.
+
+// Example Code
+// average = sum of all scores / total number of scores
+// A couple of function calls have been provided for you so you can test out your code.
+
+// Tips
+
+// You can use a loop to iterate over the scores array and add up all the scores.
+// You can use the length property to get the total number of scores.
+
+// function getAverage(scores) {
+//   let sum =0
+//   let average =0
+//   for(let i=0; i<scores.length; i++){
+//     sum = sum + scores[i]
+//   }
+//   console.log(sum)
+//   average = sum/scores.length
+//   return average
+
 // }
+
+
+// console.log(getAverage([92, 88, 12, 77, 57, 100, 67, 38, 97, 89]));
+// // console.log(getAverage([45, 87, 98, 100, 86, 94, 67, 88, 94, 95]));
+// Step 2
+// Now the teacher needs your help converting the student score to a letter grade.
+
+// Complete the getGrade function that takes a number score as a parameter. Your function should return a string representing a letter grade based on the score.
+
+// Here are the scores and their corresponding letter grades:
+
+// Score Range	Grade
+// 100	"A++"
+// 90 - 99	"A"
+// 80 - 89	"B"
+// 70 - 79	"C"
+// 60 - 69	"D"
+// 0 - 59	"F"
+// Tips
+
+// Remember that you learned about conditional statements (if, else if, and else).
+// Remember that you learned about comparison operators (>, <, >=, <=, ===).
+
+// function getGrade(score) {
+//   if(score ==100){
+//     return "A++"
+//   }else if(score >=90 && score <=99){
+//     return "A"
+//   }else if(score >= 80 && score <= 89){
+//     return "B"
+//   }else if(score >= 70 && score <= 79){
+//     return "C"
+//   }else if(score >= 60 && score <= 69){
+//     return "D"
+//   }else if(score >= 0 && score <= 59){
+//     return "F"
+//   }
+//   }
+//   console.log(getGrade(96));
+//   console.log(getGrade(82));
+//   console.log(getGrade(56));
